@@ -16,7 +16,7 @@ public class WordListControler {
     private WordListService wordListService = new WordListService();
 
     @CrossOrigin(origins = "http://localhost:4200")
-    @GetMapping("/words")
+    @GetMapping("/api/v1/words")
     @ResponseBody
     public List<String> getWordList(@RequestParam() int numWords){
         List<String> list = new ArrayList<String>(numWords);
